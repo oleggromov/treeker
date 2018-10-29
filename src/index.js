@@ -1,5 +1,6 @@
 const generateChildren = require('./generateChildren')
 const TreeNode = require('./treenode')
+const renderJsx = require('./renderJsx')
 const minimist = require('minimist')
 const args = minimist(process.argv.slice(2))
 
@@ -19,7 +20,6 @@ if (errors.length) {
 }
 
 const root = new TreeNode({ type: args.root })
-
 generateChildren({
   root,
   depth: args.depth,
@@ -28,4 +28,4 @@ generateChildren({
   nodeTypes: args.node
 })
 
-console.log(JSON.stringify(root, null, 2))
+console.log(renderJsx(root))
