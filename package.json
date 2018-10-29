@@ -1,8 +1,12 @@
 {
   "name": "treeker",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Oleg Gromov <hi@oleggromov.com",
+  "description": "A fake JSX (string) generator 🤖",
+  "main": "src/index.js",
+  "bin": {
+    "treeker": "./src/index.js"
+  },
+  "author": "Oleg Gromov <hi@oleggromov.com>",
   "license": "MIT",
   "dependencies": {
     "minimist": "^1.2.0",

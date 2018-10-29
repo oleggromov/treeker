@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 const generateChildren = require('./generateChildren')
 const TreeNode = require('./treenode')
 const renderJsx = require('./renderJsx')
 const minimist = require('minimist')
-const args = minimist(process.argv.slice(2))
+const args = minimist(process.argv.slice(1))
 
 const required = ['depth', 'children', 'root', 'node', 'leaf']
 const errors = required.reduce((acc, argument) => {

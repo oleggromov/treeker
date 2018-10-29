@@ -1,17 +1,14 @@
-# Treeker - fake JSX generator
+# Treeker - a fake JSX generator 🤖
 
 Have you ever wanted to generate a _fake_ yet looking like real JSX tree for some testing purposes?
 
+I faced the issue when I decided to work on a server-side renderer that works with React and understood that I need some fake components with either deep nesting or large number of children. Quick look-up on the internet yielded nothing so I decided to create a simple tool on my own.
 
+## usage
 
-I faced the issue when I decided to work on a server-side renderer that works with React and understood that I need some fake components with either deep nesting or large number of children. Quick look-up yielded nothing so I decided to create a simple tool on my own.
+First you will need to install it with either `yarn global add treeker` or `npm install -g treeker`. Now you can use it it like this:
 
-## Example
-
-
-Exec it like this:
-
-`node src/index.js --depth=3 --children=2 --root=App --node=Pane,Stuff,Container --leaf=Button,Paragraph`
+`treeker --depth=3 --children=2 --root=App --node=Pane,Stuff,Container --leaf=Button,Paragraph`
 
 ```(jsx)
 <App>
