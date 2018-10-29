@@ -1,0 +1,11 @@
+{
+  "name": "treeker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Oleg Gromov <hi@oleggromov.com",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "random-words": "^1.1.0"
+  }
+}
